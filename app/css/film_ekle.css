@@ -1,0 +1,84 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('resimler/film_ekle.png') no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+/* Ana Sayfa Butonu */
+.anasayfa-btn {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: #333;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s;
+    margin-bottom: 20px;
+}
+
+.anasayfa-btn:hover {
+    background-color: #e6b800;
+    transform: scale(1.05);
+}
+
+/* Form alanı */
+.form-container {
+    background: rgba(255, 255, 224, 0.95); /* Açık sarımsı bir arka plan */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    width: 500px;
+    margin: 40px auto;
+    text-align: left;
+}
+
+.form-container label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    color: #444;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-right: 31px;
+    border: 2px solid #ffcc00;
+    border-radius: 6px;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.form-container input:focus {
+    border-color: #e6b800;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(230, 184, 0, 0.5);
+}
+
+.form-container input[type="submit"] {
+    background-color: #ffcc00;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: #e6b800;
+    transform: scale(1.05);
+}
+
+
+

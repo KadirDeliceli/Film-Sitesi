@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+.navbar-container {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    background: #ffcc00;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    min-width: 150px;
+}
+.user-name {
+    flex-grow: 1;
+    font-size: 16px;
+    margin-right: 10px;
+    color: black;
+}
+.profile-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0; /* Sağ hizalama */
+    background: #333;
+    width: 220px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+.dropdown a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid #444;
+}
+.dropdown a:last-child {
+    border-bottom: none;
+}
+.dropdown a:hover {
+    background: #444;
+}
+.dropdown a i {
+    margin-right: 10px;
+}

@@ -1,0 +1,3 @@
+docker build -t kadir57/film-app:v8 .
+docker push kadir57/film-app:v8
+

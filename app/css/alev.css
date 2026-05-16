@@ -1,0 +1,42 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+.rating-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: #333;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+}
+.fire {
+    font-size: 30px;
+    cursor: pointer;
+    color: #444;
+    transition: color 0.2s;
+}
+.fire.active {
+    color: red;
+}
+/* Oy mesajı için stil */
+.rating-message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    display: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
