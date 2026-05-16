@@ -37,7 +37,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                sh 'kubectl rollout restart deployment film-web'
+                sh 'kubectl rollout restart deployment film-web -n default'
             }
         }
     }
