@@ -38,17 +38,22 @@ pipeline {
         stage('Deploy') {
             steps {
 
+                sh 'kubectl delete svc film-web-service --ignore-not-found=true'
+
                 sh '''
-                kubectl apply -f film-k8s/web-deployment.yaml
-                kubectl apply -f film-k8s/web-service.yaml
-                kubectl apply -f film-k8s/mysql-deployment.yaml
-                kubectl apply -f film-k8s/mysql-service.yaml
                 kubectl apply -f film-k8s/mysql-pv.yaml
                 kubectl apply -f film-k8s/mysql-pvc.yaml
+                kubectl apply -f film-k8s/mysql-service.yaml
+                kubectl apply -f film-k8s/mysql-deployment.yaml
+
                 kubectl apply -f film-k8s/mysql-networkpolicy.yaml
+
+                kubectl apply -f film-k8s/web-deployment.yaml
+                kubectl apply -f film-k8s/web-service.yaml
                 '''
 
-                sh 'kubectl rollout restart deployment film-web -n default'
+                sh 'kubectl rollout restart deployment film-web'
+                sh 'kubectl rollout status deployment film-web'
             }
         }
     }
