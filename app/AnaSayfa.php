@@ -81,7 +81,7 @@ if (isset($_SESSION["KullaniciAdi"])) {
                 <img src="profilResimlari/logo.jpg" alt="Film Logosu" width="150" height="100">
             </div>
         </a>
-        <div class="overlay"></div> <input type="text" id="arama" placeholder="arama yapınız lütfen!!!! Bulut Bilişim ..." onkeyup="filmAra()">
+        <div class="overlay"></div> <input type="text" id="arama" placeholder="arama yapınız lütfen!!!!" onkeyup="filmAra()">
         <a href="film_ekleme_kontrol.php" class="btn">Film Kayıt</a>
 
         <?php if (!isset($_SESSION["KullaniciAdi"])) {  ?>
