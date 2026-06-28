@@ -6,12 +6,6 @@
 
 ### Bulut Bilişim Dersi Final Projesi
 
-**Ad Soyad:** Kadir Deliceli
-**Okul Numarası:** 23010310026
-
-**Ad Soyad:** Ahmet Taha Yalçın
-**Okul Numarası:** 23010310080
-
 ---
 
 # Proje Hakkında
